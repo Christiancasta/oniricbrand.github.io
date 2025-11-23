@@ -273,6 +273,7 @@ video {
   border-radius: 20px;
   box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
   transition: 0.3s;
+  height: 100%;
 }
 
 /* Optional hover lift */
@@ -282,8 +283,9 @@ video {
 
 /* Icon */
 .service-icon {
-  width: 90px;   /* Adjust size as needed */
-  height: auto;
+  width: 45%;
+  height: 9rem;
+  object-fit: contain;
 }
 
 /* Gradient divider */
