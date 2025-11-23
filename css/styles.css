@@ -1,0 +1,302 @@
+.fixed-img {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+    /* Keeps image looking good */
+}
+
+@media (max-width: 576px) {
+    #logoCarousel .carousel-item .d-flex {
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap !important;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 1rem;
+    }
+
+    #logoCarousel img {
+        width: 4rem !important;
+        flex: 0 0 auto;
+        /* prevents shrinking, forces 1 row */
+    }
+}
+
+.gradient-btn {
+    background: linear-gradient(180deg, #C02BFF 0%, #7B6BFF 100%);
+    color: white;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    /* pill shape */
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+    display: inline-block;
+}
+
+.gradient-btn:hover {
+    transform: scale(1.04);
+    opacity: 0.95;
+}
+
+.gradient-btn:active {
+    transform: scale(0.97);
+}
+
+/* Hide the background (backdrop) */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* Optionally, remove the border and shadow for a cleaner look */
+.modal-content {
+    border: none;
+    box-shadow: none;
+    background-color: transparent !important;
+}
+
+/* Ensure the modal fills the screen for a full-screen video */
+.modal-dialog {
+    max-width: 100%;
+    width: 100%;
+}
+
+/* Make sure the video takes up the entire modal */
+.modal-body {
+    padding: 0;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Larger Close Button */
+.modal-header .btn-lg {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    /* Larger padding for a bigger button */
+    border-radius: 50px;
+    /* Rounded corners */
+    position: absolute;
+    top: -60px;
+    /* Position it towards the top */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    /* Ensure the button stays on top of the content */
+}
+
+/* Optionally, make the button stand out more */
+.modal-header .btn-danger {
+    background-color: #bdbdbd;
+    border: none;
+}
+
+.modal-header .btn-danger:hover {
+    background-color: #3d3d3d;
+}
+
+/* Make the modal header transparent */
+.modal-header {
+    background-color: transparent !important;
+    border-bottom: none !important;
+    /* Remove the border under the header */
+}
+
+/* Optional: Style the close button to be visible against the transparent header */
+.modal-header .btn-close {
+    color: #fff;
+    /* White color for the close button */
+}
+
+/* Optional: Adjust the large close button to stay visible on transparent background */
+.modal-header .btn-lg {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    /* Add white border for visibility */
+}
+
+/* Apply the gray background to the entire width section */
+.full-width-background {
+    background-color: #f8f9fa;
+    /* Light gray background */
+    padding: 2rem 0;
+    /* Optional padding to add space above and below */
+}
+
+/* Add some padding to the container */
+.container {
+    padding: 2rem;
+}
+
+/* Style for the button */
+.btn-vision {
+    background-color: transparent;
+    /* Transparent background */
+    border: 2px solid #6c757d;
+    /* Border color (gray) */
+    color: #6c757d;
+    /* Text color */
+    font-size: 1rem;
+    /* Font size */
+    padding: 10px 20px;
+    /* Padding around the text */
+    border-radius: 30px;
+    /* Rounded pill shape */
+    display: inline-flex;
+    /* Flexbox for aligning icon and text */
+    align-items: center;
+    /* Align the text and icon vertically */
+    gap: 10px;
+    /* Space between the icon and text */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.btn-vision:hover {
+    background-color: #f8f9fa;
+    /* Light gray background on hover */
+    border-color: #5a6268;
+    /* Darker border on hover */
+    color: #343a40;
+    /* Darker text color on hover */
+}
+
+/* Icon size */
+.btn-vision .fas {
+    font-size: 1.2rem;
+    /* Adjust the icon size */
+}
+
+
+/* Style for the carousel indicators (dots) */
+.carousel-indicators button {
+    background-color: #2b2323; /* Change the color of the dots */
+}
+
+.carousel-indicators .active {
+    background-color: #888888; /* Active dot color */
+}
+
+/* Adjust carousel control buttons (Next/Previous) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #222427; /* Customize the icons */
+}
+
+.promo-card {
+  border-radius: 15px;
+  background: white;
+  overflow: hidden;
+}
+
+/* Gradient Header */
+.promo-card-header {
+  background: linear-gradient(90deg, #c823ff, #6f2fff);
+  padding: 22px 10px;
+}
+
+/* Fancy subtitle font */
+.promo-subtitle {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+}
+
+/* Gradient button */
+.btn-gradient {
+  background: linear-gradient(90deg, #c823ff, #6f2fff);
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 30px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-gradient:hover {
+  filter: brightness(1.1);
+  color: white;
+}
+
+/* Blue gradient header */
+.promo-card-header-blue {
+  background: linear-gradient(90deg, #12c2e9, #0ed7a8);
+}
+
+/* Blue gradient button */
+.btn-gradient-blue {
+  background: linear-gradient(90deg, #12c2e9, #0ed7a8);
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 30px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-gradient-blue:hover {
+  filter: brightness(1.1);
+  color: white;
+}
+
+.footer-custom {
+  background: #000;
+}
+
+.footer-custom p,
+.footer-custom h2 {
+  color: #fff;
+}
+
+/* Icon size and style */
+.social-icon {
+  height: 38px;
+  width: auto;
+  transition: 0.3s;
+  opacity: 0.9;
+}
+
+/* Slight hover effect */
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+/* Optional hover lift */
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Icon */
+.service-icon {
+  width: 90px;   /* Adjust size as needed */
+  height: auto;
+}
+
+/* Gradient divider */
+.service-divider {
+  height: 3px;
+  width: 60%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #c823ff, #6f2fff);
+}
+
+/* Description text */
+.service-text {
+  color: #888;
+  font-size: 14px;
+  line-height: 1.5;
+}
