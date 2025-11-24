@@ -302,3 +302,14 @@ video {
   font-size: 14px;
   line-height: 1.5;
 }
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../fonts/NoirPro-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MyFont';
+}
